@@ -1,4 +1,4 @@
-# CineLog 🎬
+# Watchlist 🎬
 
 Sistema web de gestão de filmes desenvolvido por **Alan Filipe Reginato**.
 
@@ -17,9 +17,9 @@ Sistema web de gestão de filmes desenvolvido por **Alan Filipe Reginato**.
 ## 1. Banco de Dados
 
 1. Abra o MySQL Workbench (ou terminal MySQL)
-2. Importe o arquivo `cinelog.sql`:
+2. Importe o arquivo `watchlist.sql`:
    ```sql
-   source /caminho/para/cinelog.sql
+   source /caminho/para/watchlist.sql
    ```
    Ou via MySQL Workbench: **Server > Data Import > Import from Self-Contained File**
 
@@ -86,7 +86,7 @@ O frontend estará disponível em: `http://localhost:5173`
 ## Estrutura do Projeto
 
 ```
-cinelog/
+watchlist/
 ├── backend/
 │   ├── config/
 │   │   └── db.js              # Configuração MySQL
@@ -123,7 +123,7 @@ cinelog/
 │   ├── package.json
 │   └── vite.config.js
 │
-├── cinelog.sql
+├── watchlist.sql
 └── README.md
 ```
 
