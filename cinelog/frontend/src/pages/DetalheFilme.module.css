@@ -1,0 +1,262 @@
+.page {
+  padding: 40px 0 80px;
+}
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 20px;
+}
+
+.erroMsg {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  transition: color var(--transition);
+  text-decoration: none;
+}
+
+.voltar:hover {
+  color: var(--blue-bright);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 56px;
+  align-items: start;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.posterCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 80px;
+}
+
+.posterWrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 2/3;
+  background: var(--bg-card);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notaCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notaNum {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.notaLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.notaSub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnEdit {
+  padding: 11px;
+  background: var(--blue-primary);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: all var(--transition);
+  display: block;
+}
+
+.btnEdit:hover {
+  background: var(--blue-bright);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.35);
+}
+
+.btnDelete {
+  padding: 11px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btnDelete:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.infoCol {
+  padding-top: 8px;
+}
+
+.metaTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.genero {
+  font-size: 12px;
+  background: var(--blue-glow);
+  color: var(--blue-bright);
+  border: 1px solid var(--blue-border);
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.badgeAssistido {
+  font-size: 12px;
+  color: var(--success);
+  font-weight: 500;
+}
+
+.badgePendente {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.titulo {
+  font-family: var(--font-display);
+  font-size: 52px;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+.diretor {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.diretor strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.detalhes {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+.detalheItem {
+  flex: 1;
+  padding: 16px 20px;
+  border-right: 1px solid var(--border);
+}
+
+.detalheItem:last-child {
+  border-right: none;
+}
+
+.detalheLabel {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.detalheValor {
+  font-size: 15px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.sinopse {
+  margin-bottom: 32px;
+}
+
+.sinopseTitulo {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.sinopseTexto {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.data {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .posterCol {
+    position: static;
+    max-width: 260px;
+  }
+  .titulo {
+    font-size: 36px;
+  }
+}

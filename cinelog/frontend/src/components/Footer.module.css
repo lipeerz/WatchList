@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--blue-bright);
+  font-style: italic;
+}
+
+.divider {
+  color: var(--text-muted);
+}
+
+.copy {
+  font-size: 13px;
+  color: var(--text-muted);
+}

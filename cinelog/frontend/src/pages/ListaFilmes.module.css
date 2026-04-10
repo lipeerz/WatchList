@@ -1,0 +1,182 @@
+.page {
+  padding: 48px 0 80px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.titulo {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.searchBar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 12px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.searchInput:focus {
+  border-color: var(--blue-border);
+  background: var(--bg-card-hover);
+  box-shadow: 0 0 0 3px var(--blue-glow);
+}
+
+.searchBtn {
+  padding: 12px 24px;
+  background: var(--blue-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.searchBtn:hover {
+  background: var(--blue-bright);
+}
+
+.clearBtn {
+  padding: 12px 18px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.clearBtn:hover {
+  color: var(--error);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.generos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.generoBtn {
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.generoBtn:hover {
+  border-color: var(--blue-border);
+  color: var(--blue-bright);
+}
+
+.generoAtivo {
+  background: var(--blue-glow);
+  border-color: var(--blue-primary);
+  color: var(--blue-bright);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 24px;
+}
+
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  gap: 16px;
+}
+
+.erroBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.erroIcon {
+  font-size: 32px;
+  color: var(--error);
+}
+
+.erroMsg {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.retryBtn {
+  margin-top: 4px;
+  padding: 10px 22px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.retryBtn:hover {
+  border-color: var(--blue-border);
+  color: var(--blue-bright);
+}
+
+.vazio {
+  font-size: 48px;
+  color: var(--text-muted);
+  opacity: 0.3;
+}
+
+.vazioMsg {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--text-secondary);
+}
+
+.vazioSub {
+  font-size: 14px;
+  color: var(--text-muted);
+}
